@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Intro Script B G Base';
+    src: url('IntroScriptB-GBase.woff2') format('woff2'),
+        url('IntroScriptB-GBase.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок 6 свойства оформления блоков и текста</title>
+</head>
+
+<body>
+    <div class="wreaper">
+        <header class="header">
+            <h1>«Важно не только помнить свойства, но и понимать их»</h1>
+            <p>В данной статье мы рассмотрим свойства оформления css, которые проходили на уроках. Я постараюсь кратко,
+                доступно и увлекательно
+                показать работу свойств стилизации на практических примерах. Всем приятного просмотра! :)</p>
+            <div class="menu">
+                <ul class="list">
+
+
+                    <li><a href="#section-1">1.Font-family</a></li>
+
+
+
+                    <li><a href="#section-2">2.Font-style</a></li>
+
+
+
+                    <li> <a href="#section-3">3.Font-weight</a></li>
+
+
+                    <li><a href="#section-4">4.Text-decoration</a></li>
+
+
+                    <li><a href="#section-5">5.Text-transform</a></li>
+
+
+                    <li><a href="#section-6">6.Box-shadow</a></li>
+
+
+
+                    <li class="nowrap"><a href="#section-7">7.Оформление и перобразование нашего текста для более
+                            приятного чтения</a></li>
+
+
+                    <li><a href="#section-8">8.Overflow</a></li>
+
+
+                    <li class="nowrap"><a href="#section-9">9.Внешние и внутренние отступы</a></li>
+
+
+                    <li><a href="#section-10">10.Высота и ширина</a></li>
+
+
+                    <li><a href="#section-11">11.Выравнивание при помощи margin</a></li>
+
+
+                    <li><a href="#section-12">12.Display</a></li>
+
+
+                    <li><a href="#section-13">13.Border</a></li>
+
+
+                    <li><a href="#section-14">14.Border-radius</a></li>
+
+
+                    <li><a href="#section-15">15.Opacity</a></li>
+
+
+                    <li><a href="#section-16">16.visibility</a></li>
+
+
+                    <li><a href="#section-17">17.Outline</a></li>
+
+
+                    <li><a href="#section-18">18.Text-align</a></li>
+
+
+
+
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="block-one">
+                <h2 id="section-1">Font-family</h2>
+                <p>Font-family(с англ. семейство шрифта) - В значении этого свойства указывается список названий
+                    шрифтов, перечисленных через запятую. В начале списка располагают самый желаемый шрифт, затем менее
+                    желаемый, а в самом конце списка — общий тип шрифта. Браузер проходит по списку слева направо и
+                    использует первый найденный в системе или на сайте шрифт. Пример:</p>
+                <div class="image">
+                    <img src="img/css-code.PNG" alt="Упс, здесь должна быть картинка">
+                </div>
+                <p>Подключать шрифты можно как через <a target="_blank"
+                        href="https://fonts.google.com/">google-fonts</a>,так и через другие сайты по типу <a
+                        target="_blank" href="https://webfonts.pro/">web-fonts</a>. Подробное обучение по подключению
+                    шрифтов разными способами можно посмотреть <a target="_blank"
+                        href="https://www.youtube.com/watch?v=GwA0BN5RgB0&ab_channel=%D0%A4%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8-IT%D0%B8%D1%84%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81">здесь</a>.
+                </p>
+            </div>
+            <div class="block-two">
+                <h2 id="section-2">Font-style</h2>
+                <p>Font-style(с англ. стиль шрифта) - это CSS-свойство определяющее каким образом шрифт должен быть
+                    стилизирован, будь то это normal,
+                    italic или oblique.</p>
+                <p>Мы рассмотрим значения свойств:</p>
+                <ol class="list-block">
+                    <li>! italick</li>
+                    <li>! normal</li>
+                    <li>! oblique</li>
+                </ol>
+                <p>Значение normal является значением по умолчанию, т.е. ничего не меняет. italick делает курсивный
+                    текст. oblique - наклонный текст. В отличие от italic, который имитирует рукописный текст, наклонный
+                    представляет собой обычный текст, буквы которого наклонены в сторону.</p>
+                <div class="image-two">
+                    <img src="img/css-code-two.png" alt="Упс, здесь должна быть картинка">
+                </div>
+            </div>
+            <div class="block-three">
+                <h2 id="section-3">Font-weight</h2>
+                <p>Ещё один параметр шрифта, которым мы можем управлять - это насыщенность или толщина шрифта. Шрифт
+                    может быть жирнее или тоньше обычного начертания. Устанавливается насыщенность с помощью свойства
+                    <span class="out">font-weight.</span> В качестве значения можно использовать ключевое слово или
+                    число. Самые
+                    часто
+                    встречающиеся значения:
+                </p>
+                <div class="image-three">
+                    <img src="img/css-code-three.PNG" alt="Упс, здесь должна быть картинка">
+                </div>
+                <p>Эти значения стоит выучить каждому верстальщику!</p>
+            </div>
+            <div class="block-fo">
+                <h2 id="section-4">Text-decoration</h2>
+                <p>Это свойство, с помощью которого можно задать дополнительное оформление текста. </p>
+                <ol class="list-block">
+                    <li><span class="out">underline</span> — подчёркивание;</li>
+                    <li><span class="out">line-through</span> — зачёркивание;</li>
+                    <li><span class="out">overline</span> — надчёркивание;</li>
+                    <li><span class="out">none</span> — убирает вышеперечисленные эффекты.</li>
+                </ol>
+                <p class="two-decoration">К тексту можно одновременно применить несколько эффектов, если перечислить
+                    значения через пробел:</p>
+                <div class="image-fo">
+                    <img src="img/css-code-fo.PNG" alt="Упс, здесь должна быть картинка">
+                </div>
+            </div>
+            <div class="block-fine">
+                <h2 id="section-5">Text-transform</h2>
+                <p>С помощью <span class="out">Text-transform</span> можно также управлять регистром
+                    символов: делать буквы строчными (маленькими) или заглавными (большими)</p>
+                <ol class="list-block">
+                    <li><span class="out">lowercase</span> — все строчные;</li>
+                    <li><span class="out">uppercase</span> — все заглавные;</li>
+                    <li><span class="out">capitalize</span> — каждое слово начинается с большой буквы;</li>
+                    <li><span class="out">none</span> — отменяет изменение регистра.</li>
+                </ol>
+                <div class="block-out">
+                    <p>p { <br>text-transform: uppercase; <br> } </p>
+                </div>
+
+            </div>
+            <div class="block-six">
+                <h2 id="section-6">Box-shadow</h2>
+                <p>Позволяет добавлять элементу одну или несколько теней, указывая их параметры через запятую. Свойство
+                    <span class="out">box-shadow</span> позволяет вам задать тень для почти любого элемента. Если
+                    элементу задано
+                    свойство border-radius, то тень также будет с закруглёнными углами.
+                </p>
+                <p>
+                    Генератор <a target="_blank"
+                        href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator">box-shadow
+                        generator</a> - интерактивный инструмент, позволяющий вам генерировать
+                    box-shadow.
+                </p>
+                <div class="image-six">
+                    <img width="500" src="img/css-code-six.PNG" alt="Упс, здесь должна быть картинка">
+                </div>
+            </div>
+            <div class="block-seven">
+                <h2 id="section-7"> Оформление и перобразование нашего текста для более приятного чтения</h2>
+                <p>line-height, letter-spacing, text-indent, word-spacing, font-size - данные свойства предназначены для
+                    того, чтобы разрядить текст и пользователю было приятно его читать
+                </p>
+                <ol class="list-block">
+                    <li><span class="out">line-height</span> — высота линии строки, создаёт расстояние между строками,
+                        что значительно облегчает чтение;</li>
+                    <li><span class="out">letter-spacing</span> — расстояние между буквами, неплохо разряжает текст;
+                    </li>
+                    <li><span class="out">text-indent</span> — отступ в начале, а если более просто - создаёт красную
+                        строку. Эстетика;</li>
+                    <li><span class="out">word-spacing</span> —расстояние между словами. Неплохое дополнение для
+                        letter-spacing;</li>
+                    <li><span class="out">font-size</span> — задаёт размер шрифту.</li>
+                </ol>
+
+            </div>
+            <div class="block-eight">
+                <h2 id="section-8">Overflow </h2>
+                <p>Определяет, необходимо ли для переполненного блочного элемента содержимое обрезать, предоставить
+                    полосы прокрутки или просто отобразить. Имеет следующие значения:</p>
+                <ol class="list-block">
+                    <li><span class="out">visible</span> — По умолчанию. Содержимое не обрезается, может отображаться
+                        снаружи блока, в котором оно расположено;</li>
+                    <li><span class="out">hidden</span> — Контент обрезается, без предоставления прокрутки;
+                    </li>
+                    <li><span class="out">scroll</span> — Содержимое обрезается и браузер использует элементы прокрутки,
+                        не важно было ли обрезано содержимое или нет. Это избегает многих проблем касательно появления
+                        прокруток и их исчезновения в динамичной среде. Принтеры могут печатать переполненное
+                        содержимое;</li>
+                    <li><span class="out">auto</span> — Зависит от агента пользователя. Браузеры такие как Firefox
+                        предоставляют прокрутку, если содержимое переполняет блок.</li>
+                </ol>
+                <p>overline: auto; в блоке в сочетании с overflow: hidden; во всей оболочке(wreaper) создаёт
+                    вертикальный
+                    скролл без горизонтального.</p>
+            </div>
+            <div class="block-nine">
+                <h2 id="section-9">Внешние и внутренние отступы</h2>
+                <div class="image-nine">
+                    <img src="img/css-code-nine.png.crdownload" alt="Упс, здесь должна быть картинка">
+                </div>
+                <p>margin является внешним отступом, т.е. расстояние от одного объекта до другого объекта; padding
+                    является внутренним отступом, т.е. расстояние от границ объекта до его содержимого.</p>
+                <p>Внешние отступы:</p>
+                <ol class="list-block">
+                    <li><span class="out">padding-top:</span> — значение;</li>
+                    <li><span class="out">padding-right:</span> — значение;
+                    </li>
+                    <li><span class="out">padding-bottom:</span> — значение;</li>
+                    <li><span class="out">padding-left:</span> — значение</li>
+                </ol>
+                <p>Внутренние отступы:</p>
+                <ol class="list-block">
+                    <li><span class="out">margin-top:</span> — значение;</li>
+                    <li><span class="out">margin-right:</span> — значение;
+                    </li>
+                    <li><span class="out">margin-bottom:</span> — значение;</li>
+                    <li><span class="out">margin-left:</span> — значение</li>
+                </ol>
+                <p>Так же есть универсальные записи:</p>
+                <div class="image-ninetwo">
+                    <img src="img/css-code-ninetwo.png" alt="Упс, здесь должна быть картинка">
+                </div>
+                <p style="margin-top: 20px;">Те же значения работают и для margin.</p>
+            </div>
+            <div class="block-ten">
+                <h2 id="section-10">Высота и ширина</h2>
+                <p><span>height и width</span> существуют для того чтобы объекту можно было задать определенную ширину и
+                    высоту.С их помощью вы можете устанавливать фиксированные размеры элементов.</p>
+                <p>Тема довольна обширная и её проще разобрать на практике. Видео по разбору этих свойств и других
+                    находится <a target="_blank"
+                        href="https://www.youtube.com/watch?v=RQqzOTUa9Ig&ab_channel=%D0%A4%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8-IT%D0%B8%D1%84%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81">здесь</a>.
+                </p>
+                <p>Сразу стоит запомнить, что у свойств width и height есть особенность — они не включают в себя
+                    значения margin, padding и border. Значение, которое вы установите для width/height, будет означать
+                    лишь ширину/высоту области содержимого элемента.</p>
+                <p>Свойство <span class="out">height</span> может быть удобным, если надо точно контролировать,
+                    например, высоту изображения.
+                    Однако, если в контейнере будет содержаться текст или любой другой контент, у которого может
+                    варьироваться высота, крайне не рекомендуется устанавливать фиксированную высоту для контейнера, так
+                    как подобная верстка может привести к неожиданному результату — контент будет отображаться поверх
+                    другого содержимого.</p>
+                <p>Вместо фиксированной высоты использовать <span class="out"> height: auto</span> — эта запись
+                    означает, что высота объекта будет
+                    рассчитываться автоматически, в зависимости от содержимого, которое он содержит.</p>
+                <p>Другой способ избежать развала верстки — использовать запись <span class="out">overflow: auto.</span>
+                    В таком случае, если высота содержимого будет превышать значение height
+                    своего контейнера, браузер
+                    добавит к контейнеру полосу прокрутки.</p>
+                <p>Ширину элемента удобно указывать для дальнейшего выравнивания блока.</p>
+            </div>
+            <div class="block-eleven">
+                <h2 id="section-11">Выравнивание при помощи margin</h2>
+                <p>Указав ширину блочному объекту, его можно выравнивать по горизонтали, используя margin.</p>
+                <ol class="list-block">
+                    <li><span class="out">margin: 0 auto</span> — выравнивание по центру;</li>
+                    <li><span class="out">margin: 0 0 0 auto</span> — выравнивание по правому краю;
+                    </li>
+                    <li><span class="out">margin: auto 0 0 0</span> — выравнивание по левому краю.</li>
+                </ol>
+            </div>
+            <div class="block-twelve">
+                <h2 id="section-12">Display</h2>
+                <p>Определяет тип отображения элемента. Крайне многогранное свойство. Может применяться для вырывания
+                    блока из страницы, для превращения из строчного в блочный элемент и наоборот, для образования
+                    гибридного блока и т.д. Мы рассмотрим несколько важнейших свойств, которые проходили на уроке.</p>
+                <ol class="list-block">
+                    <li><span class="out">inline</span> — делает тег строчным;</li>
+                    <li><span class="out">block: 0 0 0 auto</span> — делает тег блочным;
+                    </li>
+                    <li><span class="out">inline-block</span> — делает тег строчным, но даёт возможность применять к
+                        нему блочные свойства;</li>
+                    <li><span class="out">none</span> — вырывает блок из страницы, не резервируя его;</li>
+                </ol>
+
+            </div>
+            <div class="block-thirteen">
+                <h2 id="section-13">Border</h2>
+                <p>- это граница объета. Имеет как универсальную запись, так и несколько записей, каждая из которых
+                    направлена на стилизацию одной стороны:</p>
+
+
+                <ol class="list-block">
+                    <li><span class="out">border-top</span> — 1px solid(прямая линия) red;</li>
+                    <li><span class="out">border-left</span> — 1px dotted(точки) red;
+                    </li>
+                    <li><span class="out">border-bottom</span> — 1px dashed(пунктир) red;</li>
+                    <li><span class="out">border-right</span> — 1px double(двойная линия) red.</li>
+                </ol>
+                <p>Универсальная запись указывает одним свойством значение для всез сторон: border: 10px solid red;</p>
+            </div>
+            <div class="block-foteen">
+                <h2 id="section-14">Border-radius</h2>
+                <p>Свойство, округляющее границы объекта. Указывается как в %, так и в px. Закруглённость каждого угла
+                    определяется с помощью одного или двух радиусов, определяя его форму: круг или эллипс.</p>
+                <div class="image-footeen">
+                    <img src="img/css-code-foteen.png" alt="Упс, здесь должна быть картинка">
+                </div>
+            </div>
+            <div class="block-fifteen">
+                <h2 id="section-15">Opacity</h2>
+                <p>Устанавливает непрозрачность элемента. Непрозрачность - это степень, в которой содержимое скрывается
+                    за элементом, является противоположностью прозрачности. </p>
+                <div class="image-fifteen">
+                    <img src="img/fifteen.PNG" alt="Упс, здесь должна быть картинка">
+                </div>
+                <p>opacity: 0; - полностью скрывает объект, при этом с ним можно взаимодействовать.</p>
+
+            </div>
+            <div class="block-sixteen">
+                <h2 id="section-16">visibility</h2>
+                <p>Cкрывает или показывает элемент без изменения разметки документа. Но в отличии от opacity: 0; с
+                    объектом нельзя взаимодействовать. Значения:</p>
+                <ol class="list-block">
+                    <li><span class="out">visible</span> — по умолчанию. Объект видно;</li>
+                    <li><span class="out">hidden</span> — объект исчезает, резервируя место. При этом возможность
+                        взаимодействия отсутствует.
+                    </li>
+                </ol>
+            </div>
+            <div class="block-seventeen">
+                <h2 id="section-17">Outline</h2>
+                <p>Работает точно так же, как и border, только находится за границей блока. border резервирует место
+                    внутри объекта в зависимости от ширины границы, а outline обводит тег.</p>
+                <p>outline не влияет на размеры и положение самого элемента, не занимает место, не влияет на окружающие
+                    элементы и отображается поверх них.</p>
+                <p>
+                    <span class="out">Нельзя задать параметры линии на отдельных сторонах элемента, outline применяется
+                        сразу ко всем четырём сторонам</span>.
+                </p>
+                <p class="outline-block">
+                    { <br>outline: 1px solid red; <br> }
+                </p>
+            </div>
+            <div class="block-eighteen">
+                <h2 id="section-18">text-align</h2>
+                <p>Описывает, как выравниваются объекты внутри блока по горизонтали. Я описал как работают значнения с
+                    текстом.</p>
+                <ol class="list-block">
+                    <li><span class="out">left</span> — выравнивание по левому краю блока, это значение по умолчанию;
+                    </li>
+                    <li><span class="out">right</span> — по правому краю блока;</li>
+                    <li><span class="out">center</span> — по центру блока;</li>
+                    <li><span class="out">justify</span> — по ширине блока, при этом слова в строке будут размещаться
+                        так, чтобы занять равномерно всё пространство строки (пробелы между словами в таком случае
+                        становятся неравномерными, так как браузер «растягивает» слова в строке).
+                    </li>
+                </ol>
+                <div class="image-eighteen">
+                    <img src="img/text-align.PNG" alt="Упс, здесь должна быть картинка">
+                </div>
+
+            </div>
+        </main>
+
+
+
+
+
+        </main>
+        <footer class="footer">
+            <p class="final-text">Это были свойства и значения css, которые мы изучили за 6 уроков. В дальнейшем их
+                количество будет пополняться на этом сайте. Если сайт вам понравился, добавьте его к себе в закладки,
+                чтобы
+                всегда быть в теме! :) <br>
+                Удобная навигация и минималистичный дизайн обеспечит вам оптимизацию вашего времени на поиск необходимой
+                вам
+                информации.</p>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
